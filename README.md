@@ -2,6 +2,12 @@
 
 A portfolio project demonstrating a full-stack task management app built with FastAPI, SQLAlchemy, and React. Took about an hour with limited knowledge of the Python libraries used, though I don't know how much credit I deserve when Claude Code is so powerful.
 
+
+
+https://github.com/user-attachments/assets/2ba841d3-76bd-480b-9768-2bcc50cfae39
+
+
+
 ## Apps
 
 | App | Stack | Port |
