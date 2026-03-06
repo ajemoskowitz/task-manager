@@ -1,4 +1,15 @@
+# Python
 __pycache__/
 *.pyc
 .venv/
-tasks.db
+*.db
+
+# Node
+node_modules/
+dist/
+
+# Turbo
+.turbo/
+
+# Misc
+.DS_Store
