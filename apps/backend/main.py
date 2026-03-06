@@ -1,5 +1,6 @@
 from typing import Optional
 from fastapi import FastAPI, Depends, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
 from sqlalchemy.orm import Session
 
@@ -10,6 +11,13 @@ from database import engine, get_db
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Task Management API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/tasks", response_model=list[schemas.TaskResponse])
